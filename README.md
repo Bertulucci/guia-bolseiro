@@ -1,2 +1,2 @@
-# portal-bolseiro
-Portal do Bolseiro da NOVA FCT – Plataforma digital de apoio ao Bolseiro de Investigação.
+# guia-bolseiro
+Informação essencial para apoiar a integração e o percurso do bolseiro na NOVA FCT.
