@@ -2156,7 +2156,27 @@ html{
 .commit-clean-overlay h3{
   text-align:center !important;
 }
+/* Ajuste pontual — garantir leitura completa do texto dos cartões */
+.commit-clean-card{
+  min-height:390px !important;
+}
 
+.commit-clean-overlay{
+  bottom:16px !important;
+}
+
+.commit-clean-overlay p{
+  font-size:.76rem !important;
+  line-height:1.25 !important;
+}
+
+.commit-clean-card:hover .commit-clean-overlay p,
+.commit-clean-card:focus-within .commit-clean-overlay p,
+.commit-clean-card:active .commit-clean-overlay p{
+  max-height:260px !important;
+  overflow:visible !important;
+  margin-top:8px !important;
+}
 /* CAMPUS
    Subir o texto dentro do quadro para o centro-esquerdo, mantendo linha e pontos */
 .campus-experience .campus-preview-copy,
