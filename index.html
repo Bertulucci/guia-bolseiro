@@ -3108,8 +3108,8 @@ body.final-page-active .topbar{
           <img id="campusPreviewImg" src="assets/img_16_bead67a3.jpg" alt="Vista aérea do Campus da NOVA FCT">
         <figcaption class="campus-preview-copy" id="campusPreviewCopy">
   <span class="kicker">PERCURSO PELO CAMPUS</span>
-  <h3 id="campusPreviewTitle" class="campus-copy-hidden">O Campus NOVA FCT</h3>
-<p id="campusPreviewText" class="campus-copy-hidden">Um ambiente onde investigação, aprendizagem, convívio e bem-estar se complementam.</p>
+  <h3 id="campusPreviewTitle" class="campus-copy-hidden"></h3>
+<p id="campusPreviewText" class="campus-copy-hidden"></p>
 </figcaption>
         </figure>
 
@@ -3310,7 +3310,11 @@ function setCampusStep(step){
     if(campusPreviewKicker) campusPreviewKicker.textContent=step.dataset.kicker || 'Campus NOVA FCT';
 campusPreviewTitle.textContent = step.dataset.title || '';
 campusPreviewText.textContent = step.dataset.text || '';
-campusPreviewCopy.classList.add('show-copy');
+if ((step.dataset.title || '').trim() || (step.dataset.text || '').trim()) {
+  campusPreviewCopy.classList.add('show-copy');
+} else {
+  campusPreviewCopy.classList.remove('show-copy');
+}
     campusPreview?.classList.remove('is-switching');
     campusPreviewCopy?.classList.remove('is-switching');
   },170);
