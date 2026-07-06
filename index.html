@@ -2530,7 +2530,32 @@ html{
 }
 .contact-link-button span{
   font-size:1.25rem !important;
+.contact-link-button span{
+  font-size:1.25rem !important;
 }
+
+/* Campus — garantir que as bolinhas ficam clicáveis acima da imagem/texto */
+#campus .campus-wave{
+  z-index:30 !important;
+  pointer-events:auto !important;
+}
+
+#campus .campus-step{
+  z-index:40 !important;
+  pointer-events:auto !important;
+}
+
+#campus .campus-step.active{
+  z-index:45 !important;
+}
+
+#campus .campus-preview,
+#campus .campus-preview img,
+#campus .campus-preview-copy{
+  pointer-events:none !important;
+}
+
+</style>
 </style>
 
 
