@@ -2925,7 +2925,14 @@ body.final-page-active .topbar{
 
 <style id="guia-revisao-textos-2026">
 /* Revisão editorial aprovada — alterações cirúrgicas */
-.campus-copy-hidden{display:none !important;}
+#campusPreviewCopy .campus-copy-hidden{
+  display:none !important;
+}
+
+#campusPreviewCopy.is-switching .campus-copy-hidden,
+#campusPreviewCopy.show-copy .campus-copy-hidden{
+  display:block !important;
+}
 #campus .campus-preview-copy .kicker{font-size:clamp(1rem,1.45vw,1.25rem) !important;letter-spacing:.08em !important;}
 #contactos .contact-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;max-width:1080px !important;margin:0 auto 18px !important;}
 #contactos .contact-academic-row{max-width:760px;margin:18px auto 0;}
@@ -3295,8 +3302,9 @@ function setCampusStep(step){
     campusPreviewImg.src=nextImg;
     campusPreviewImg.alt=step.dataset.title || 'Campus NOVA FCT';
     if(campusPreviewKicker) campusPreviewKicker.textContent=step.dataset.kicker || 'Campus NOVA FCT';
-    campusPreviewTitle.textContent=step.dataset.title || '';
-    campusPreviewText.textContent=step.dataset.text || '';
+campusPreviewTitle.textContent = step.dataset.title || '';
+campusPreviewText.textContent = step.dataset.text || '';
+campusPreviewCopy.classList.add('show-copy');
     campusPreview?.classList.remove('is-switching');
     campusPreviewCopy?.classList.remove('is-switching');
   },170);
