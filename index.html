@@ -2924,6 +2924,9 @@ body.final-page-active .topbar{
 </style>
 
 <style id="guia-revisao-textos-2026">
+  #campusPreviewCopy.show-copy .kicker{
+    display:none !important;
+}
 /* Revisão editorial aprovada — alterações cirúrgicas */
 #campusPreviewCopy .campus-copy-hidden{
   display:none !important;
@@ -3310,10 +3313,11 @@ function setCampusStep(step){
     if(campusPreviewKicker) campusPreviewKicker.textContent=step.dataset.kicker || 'Campus NOVA FCT';
 campusPreviewTitle.textContent = step.dataset.title || '';
 campusPreviewText.textContent = step.dataset.text || '';
+
 if ((step.dataset.title || '').trim() || (step.dataset.text || '').trim()) {
-  campusPreviewCopy.classList.add('show-copy');
+    campusPreviewCopy.classList.add('show-copy');
 } else {
-  campusPreviewCopy.classList.remove('show-copy');
+    campusPreviewCopy.classList.remove('show-copy');
 }
     campusPreview?.classList.remove('is-switching');
     campusPreviewCopy?.classList.remove('is-switching');
