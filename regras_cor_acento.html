@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<title>Regras de Identidade — Cor de Acento | Guia e Portal do Bolseiro NOVA FCT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#002060;--teal:#006AB4;--accent:#18C98F;--bg:#f4f7fa;--line:#dbe2ea;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff;line-height:1.55;}
+  header{padding:40px 48px 28px;border-bottom:1px solid var(--line);}
+  h1{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.8rem;color:var(--navy);margin:0 0 6px;}
+  .sub{font-family:'Montserrat',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.04em;color:var(--teal);text-transform:uppercase;margin:0;}
+  .status{display:flex;gap:10px;margin-top:14px;}
+  .badge{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:5px;letter-spacing:.03em;}
+  .badge.wip{background:#fff2d6;color:#8a5a00;}
+  .badge.date{background:var(--bg);color:#555;}
+  main{padding:8px 48px 60px;max-width:960px;margin:0 auto;}
+  section{margin-top:40px;}
+  h2{font-family:'Montserrat',sans-serif;font-size:1.1rem;color:var(--navy);margin:0 0 10px;}
+  p{color:#333;font-size:.94rem;margin:0 0 12px;}
+  .lead{color:#555;}
+  .swatch-row{display:flex;gap:20px;margin:16px 0;}
+  .swatch{display:flex;align-items:center;gap:10px;font-size:.85rem;}
+  .swatch .sq{width:34px;height:34px;border-radius:6px;flex-shrink:0;}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px;}
+  .rulebox{border:1px solid var(--line);border-radius:12px;padding:20px 22px;}
+  .rulebox.allow{border-left:4px solid var(--accent);}
+  .rulebox.deny{border-left:4px solid #c94c4c;}
+  .rulebox h3{font-family:'Montserrat',sans-serif;font-size:.85rem;text-transform:uppercase;letter-spacing:.04em;margin:0 0 12px;color:var(--navy);}
+  .rulebox ul{margin:0;padding-left:18px;font-size:.9rem;color:#333;}
+  .rulebox li{margin-bottom:7px;}
+  .scope-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:.9rem;}
+  .scope-table th,.scope-table td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);}
+  .scope-table th{font-family:'Montserrat',sans-serif;font-size:.76rem;text-transform:uppercase;letter-spacing:.03em;color:var(--navy);}
+  .yes{color:#0a6b3d;font-weight:600;}
+  .no{color:#a13d00;font-weight:600;}
+  .note{background:#eef4fb;border-left:3px solid var(--teal);padding:14px 18px;font-size:.88rem;border-radius:0 8px 8px 0;margin-top:8px;}
+  .demo{display:flex;align-items:center;gap:14px;margin-top:14px;}
+  .demo-rule{width:80px;height:4px;background:var(--accent);border-radius:30px;}
+  .demo-card{border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:.82rem;transition:border-color .15s;}
+  .demo-card:hover{border-color:var(--accent);}
+  footer{padding:24px 48px;border-top:1px solid var(--line);font-size:.78rem;color:#777;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Cor de Acento — Guia e Portal do Bolseiro</h1>
+  <p class="sub">Regra de identidade visual — documento técnico</p>
+  <div class="status">
+    <span class="badge wip">Tonalidade #18C98F: cor de trabalho — revisão prevista antes da versão final</span>
+    <span class="badge date">NOVA FCT · DRH · julho 2026</span>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <h2>Âmbito</h2>
+  <p>A cor de acento aplica-se <strong>apenas</strong> ao Guia do Bolseiro e ao Portal do Bolseiro, enquanto produtos digitais de acolhimento e orientação.</p>
+  <table class="scope-table">
+    <tr><th>Componente</th><th>Cor de acento</th><th>Paleta</th></tr>
+    <tr><td>Guia do Bolseiro</td><td class="yes">Sim</td><td>Navy + Teal + Acento</td></tr>
+    <tr><td>Portal do Bolseiro</td><td class="yes">Sim</td><td>Navy + Teal + Acento</td></tr>
+    <tr><td>Assistente Virtual</td><td class="no">Não</td><td>Navy + Teal, estrito</td></tr>
+    <tr><td>Manual Normativo</td><td class="no">Não</td><td>Navy + Teal, estrito</td></tr>
+  </table>
+  <p class="note">Não é uma terceira cor institucional da NOVA FCT. É um elemento de destaque gráfico, próprio destes dois produtos, sem estatuto de marca.</p>
+</section>
+
+<section>
+  <h2>Função</h2>
+  <p class="lead">Criar hierarquia visual e apoiar a orientação do utilizador ao longo de documentos extensos. Não substitui nem compete com o navy e o teal institucionais — trabalha como elemento de apoio, não de identidade.</p>
+</section>
+
+<section>
+  <h2>Regras de utilização</h2>
+  <div class="cols">
+    <div class="rulebox allow">
+      <h3>Pode ser utilizada em</h3>
+      <ul>
+        <li>Separadores (<code>.rule</code>)</li>
+        <li>Barras de destaque</li>
+        <li>Pequenos elementos gráficos de orientação</li>
+        <li>Hover states em elementos secundários — cartões, pequenos realces</li>
+      </ul>
+    </div>
+    <div class="rulebox deny">
+      <h3>Não deve ser utilizada em</h3>
+      <ul>
+        <li>Títulos</li>
+        <li>Texto corrido</li>
+        <li>Botões principais e ações decisórias</li>
+        <li>Fundos estruturais</li>
+        <li>Identidade visual do Assistente Virtual</li>
+        <li>Logótipos ou símbolos</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="margin-top:20px;">Exemplos de uso correto:</p>
+  <div class="demo">
+    <div class="demo-rule" aria-hidden="true"></div>
+    <div class="demo-card">Cartão secundário — realce ao passar o cursor</div>
+  </div>
+</section>
+
+<section>
+  <h2>Paleta de referência</h2>
+  <div class="swatch-row">
+    <div class="swatch"><div class="sq" style="background:#002060;"></div>Navy institucional — #002060</div>
+    <div class="swatch"><div class="sq" style="background:#006AB4;"></div>Teal institucional — #006AB4</div>
+    <div class="swatch"><div class="sq" style="background:#18C98F;"></div>Acento (trabalho) — #18C98F</div>
+  </div>
+</section>
+
+<section>
+  <h2>Revisão da cor</h2>
+  <p>A tonalidade atualmente utilizada (<strong>#18C98F</strong>) é considerada uma <strong>cor de trabalho</strong> do Guia e do Portal — não uma decisão final. Antes da versão final do projeto, será feita uma revisão consciente para confirmar se continua a ser a melhor escolha ou se deve ser ajustada.</p>
+</section>
+
+</main>
+
+<footer>
+  Esta regra existe para que a decisão sobre a cor de acento não dependa do histórico de conversas de trabalho — é um artefacto do próprio projeto, consultável independentemente de quem o construiu.
+</footer>
+
+</body>
+</html>
