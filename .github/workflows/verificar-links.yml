@@ -40,3 +40,4 @@ jobs:
         with:
           title: "Links partidos no Guia do Bolseiro"
           content-filepath: ./lychee/relatorio.md
+
