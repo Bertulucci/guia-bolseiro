@@ -1,0 +1,6 @@
+# Links gerados por script na página Como chegar (percursos).
+# Mantidos aqui para a verificação automática os encontrar.
+https://www.metrolisboa.pt/viajar/
+https://ttsl.pt/passageiros/horarios-de-ligacoes-fluviais/ligacao-cacilhas-cais-do-sodre/
+https://www.fertagus.pt/
+https://www.mts.pt/rede/
